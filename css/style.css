@@ -38,7 +38,7 @@ a:hover, a:active {
 }
 
 img {
-    height: 5rem;
+    height: 100%;
     width: 5rem;
 }
 
@@ -195,7 +195,6 @@ nav.normal{
 nav.normal {
     position: fixed;
     display: flex;
-    align-items: baseline;
     top:0;
     left:0;
     margin: 0;
@@ -206,8 +205,13 @@ nav.normal {
 }
 
 nav.normal>ul {
-    margin: 0;
-    margin-left:auto;
+    margin: 0 0 0 auto;
+}
+
+nav.normal>ul>li {
+    position: relative;
+    top:0;
+    left: 0;
 }
 
 nav.normal > ul > li > a {
@@ -248,11 +252,6 @@ h2.major-heading {
 img.landing.hidden {
     margin-bottom: 3rem;
 }
-
-.logo-div {
-    margin-right: auto;
-}
-
 
 
 /* TIMELINE */
@@ -497,4 +496,8 @@ hr {
     height: 30px;
     stroke: white;
     margin-top: 10px;
+}
+
+img.nav.logo {
+    margin-left: 75px;
 }
